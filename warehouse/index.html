@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Circle Line Drawer</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Shorest Path Finder</h1>
+    <div class="selection-container">
+        <div class="selection">
+            <label for="star-point">Choose the start point:</label>
+            <select id="start-point">
+                <option value="U1">U1</option>
+                <option value="U3">U3</option>
+                <option value="U5">U5</option>
+                <option value="U7">U7</option>
+                <option value="U9">U9</option>
+                <option value="U11">U11</option>
+                <option value="U13">U13</option>
+                <option value="U15">U15</option>
+                <option value="U17">U17</option>
+                <option value="T32">T32</option>
+                <option value="T30">T30</option>
+                <option value="T28">T28</option>
+                <option value="T26">T26</option>
+                <option value="T23">T23</option>
+                <option value="T21">T21</option>
+                <option value="T19">T19</option>
+                <option value="T10">T10</option>
+                <option value="T12">T12</option>
+                <option value="T14">T14</option>
+                <option value="T1">T1</option>
+                <option value="T3">T3</option>
+                <option value="T5">T5</option>
+                <option value="T7">T7</option>
+                <option value="S32">S32</option>
+                <option value="S30">S30</option>
+                <option value="S28">S28</option>
+                <option value="S26">S26</option>
+                <option value="S23">S23</option>
+                <option value="S21">S21</option>
+                <option value="S19">S19</option>
+                <option value="S10">S10</option>
+                <option value="S12">S12</option>
+                <option value="S14">S14</option>
+                <option value="S1">S1</option>
+                <option value="S3">S3</option>
+                <option value="S5">S5</option>
+                <option value="S7">S7</option>
+            </select>
+        </div>
+
+        <div class="selection">
+            <label for="end-point">Choose the end point:</label>
+            <select id="end-point">
+                <option value="U1">U1</option>
+                <option value="U3">U3</option>
+                <option value="U5">U5</option>
+                <option value="U7">U7</option>
+                <option value="U9">U9</option>
+                <option value="U11">U11</option>
+                <option value="U13">U13</option>
+                <option value="U15">U15</option>
+                <option value="U17">U17</option>
+                <option value="T32">T32</option>
+                <option value="T30">T30</option>
+                <option value="T28">T28</option>
+                <option value="T26">T26</option>
+                <option value="T23">T23</option>
+                <option value="T21">T21</option>
+                <option value="T19">T19</option>
+                <option value="T10">T10</option>
+                <option value="T12">T12</option>
+                <option value="T14">T14</option>
+                <option value="T1">T1</option>
+                <option value="T3">T3</option>
+                <option value="T5">T5</option>
+                <option value="T7">T7</option>
+                <option value="S32">S32</option>
+                <option value="S30">S30</option>
+                <option value="S28">S28</option>
+                <option value="S26">S26</option>
+                <option value="S23">S23</option>
+                <option value="S21">S21</option>
+                <option value="S19">S19</option>
+                <option value="S10">S10</option>
+                <option value="S12">S12</option>
+                <option value="S14">S14</option>
+                <option value="S1">S1</option>
+                <option value="S3">S3</option>
+                <option value="S5">S5</option>
+                <option value="S7">S7</option>
+            </select>
+        </div>
+
+        <button id="goButton" type="button">Go</button>
+    </div>
+    <div class="svg-container">
+        <object id="svgObject" type="image/svg+xml" data="Warehouse.svg"></object>
+    </div>
+</body>
+
+<!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Function to draw a line between two circles based on their row and column
+        function drawLineBetweenCircles(row1, col1, row2, col2) {
+            var circle1 = document.getElementById('circle_r' + row1 + '_c' + col1);
+            var circle2 = document.getElementById('circle_r' + row2 + '_c' + col2);
+
+            var svgCanvas = document.getElementById('svgCanvas');
+
+            var line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            line.setAttribute('x1', circle1.getAttribute('cx'));
+            line.setAttribute('y1', circle1.getAttribute('cy'));
+            line.setAttribute('x2', circle2.getAttribute('cx'));
+            line.setAttribute('y2', circle2.getAttribute('cy'));
+            line.setAttribute('stroke', 'red');
+            line.setAttribute('stroke-width', '2');
+            svgCanvas.appendChild(line);
+        }
+
+        // Example: Draw a line between circle at row 0 column 0 and circle at row 2 column 3
+        drawLineBetweenCircles(0, 0, 3, 1);
+    });
+</script> -->
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <option value="P-U1-T32">P-U1-T32</option>
+<option value="P-U2-T31">P-U2-T31</option>
+<option value="P-U3-T30">P-U3-T30</option>
+<option value="P-U4-T29">P-U4-T29</option>
+<option value="P-U5-T28">P-U5-T28</option>
+<option value="P-U6-T27">P-U6-T27</option>
+<option value="P-U7-T26">P-U7-T26</option>
+<option value="P-U8-T25">P-U8-T25</option>
+<option value="P-U9-T24">P-U9-T24</option>
+<option value="P-U10">P-U10</option>
+<option value="P-U11-T23">P-U11-T23</option>
+<option value="P-U12-T22">P-U12-T22</option>
+<option value="P-U13-T21">P-U13-T21</option>
+<option value="P-U14-T20">P-U14-T20</option>
+<option value="P-U15-T19">P-U15-T19</option>
+<option value="P-U16-T18">P-U16-T18</option>
+<option value="P-U17">P-U17</option>
+<option value="P-U18">P-U18</option>
+<option value="P-BAY1">P-BAY1</option>
+<option value="P-T1-S32">P-T1-S32</option>
+<option value="P-T2-S31">P-T2-S31</option>
+<option value="P-T3-S30">P-T3-S30</option>
+<option value="P-T4-S29">P-T4-S29</option>
+<option value="P-T5-S28">P-T5-S28</option>
+<option value="P-T6-S27">P-T6-S27</option>
+<option value="P-T7-S26">P-T7-S26</option>
+<option value="P-T8-S25">P-T8-S25</option>
+<option value="P-T9-S24">P-T9-S24</option>
+<option value="P-T10-S23">P-T10-S23</option>
+<option value="P-T11-S22">P-T11-S22</option>
+<option value="P-T12-S21">P-T12-S21</option>
+<option value="P-T13-S20">P-T13-S20</option>
+<option value="P-T14-S19">P-T14-S19</option>
+<option value="P-T15-S18">P-T15-S18</option> -->
